@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+}
+
+@-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+
+#first {
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 1.7vw;
+    top: 63.5%;
+    left: 59%;
+}
+
+#scoreandplaytime1st {
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 1.2vw;
+    top: 67.5%;
+    left: 59%;
+    font-style:italic;
+}
+
+#scoreandplaytime2nd {
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 1.2vw;
+    top: 81%;
+    left: 59%;
+    font-style:italic;
+}
+
+#scoreandplaytime3rd {
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 1.2vw;
+    top: 95%;
+    left: 59%;
+    font-style:italic;
+}
+
+#second {
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 1.7vw;
+    top: 77.2%;
+    left: 59%;
+}
+
+#third {
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 1.7vw;
+    top: 91%;
+    left: 59%;
+}
+
+#fourth {
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 1vw;
+    top: 79%;
+    left: 1.2%;
+    color: white;
+}
+
+#fifth {
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 1vw;
+    top: 82%;
+    left: 1.2%;
+    color: white;
+}
+
+#sixth {
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 1vw;
+    top: 85%;
+    left: 1.2%;
+    color: white;
+}
+
+#seventh {
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 1vw;
+    top: 88%;
+    left: 1.2%;
+    color: white;
+}
+
+#eighth {
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 1vw;
+    top: 91%;
+    left: 1.2%;
+    color: white;
+}
+
+#ninth {
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 1vw;
+    top: 94%;
+    left: 1.2%;
+    color: white;
+}
+
+#tenth {
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 1vw;
+    top: 97%;
+    left: 1.2%;
+    color: white;
+}
+
+#playerOneTitle {
+    /*border:1px solid red;*/
+    position:absolute;
+    width: 19%;
+    text-align:center;
+    left:10%;
+    top: 10.5%;
+    color: white;
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 3vw;
+}
+
+#playerOneScore {
+    /*border:1px solid navy;*/
+    position:absolute;
+    left:20%;
+    top: 26%;
+    color: white;
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 5vw;
+}
+
+#playerOneAvatar {
+    display:none;
+    position:absolute;
+    left:29%;
+    top: 10%;
+    width: 10%;
+}
+
+#playerTwoTitle {
+    /*border:1px solid red;*/
+    position:absolute;
+    width: 19%;
+    text-align:center;
+    left:62%;
+    top: 10.5%;
+    color: white;
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 3vw;
+}
+
+#playerTwoScore {
+    /*border:1px solid navy;*/
+    position:absolute;
+    left:73%;
+    top: 26%;
+    color: white;
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 5vw; 
+}
+
+#playerTwoAvatar {
+    position:absolute;
+    display:none;
+    top: 10%;
+    left: 81%;
+    width: 10%;
+}
+
+#checkAnswer {
+    display: none;
+}
+
+#score {
+    text-align: center;
+    width:27.2%;
+    color: white;
+    font-size: 5vw;
+    top:45%;
+    left:9.9%;
+    position:absolute;
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+     /*border:1px solid black;*/
+}
+
+#login {
+    text-align: center;
+    width:29.4%;
+    color: white;
+    font-size: 3vw;
+    top:17.5%;
+    left:9%;
+    position:absolute;
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+     /*border:1px solid black;*/
+}
+
+#connection {
+    border-radius:6px;
+    margin-left:17.3%;
+    width:60%;
+    position: absolute;
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top:20%;
+    padding:2%;
+}
+
+#quiz {
+    background-color:white;
+    display:none;
+    border-radius: 5px;
+    border: 2px solid grey;
+    padding: 2%;
+    width: 500px;
+    margin: auto;
+}
+
+#quizStatus {
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+    font-size: 1.8vw;
+    background-color:white;
+    display:none;
+    width: 500px;
+    padding: 2%;
+    margin: auto;
+    align: center;
+}
+
+#stillregistered {
+    padding-bottom:6%;
+    padding-left:1%;
+    padding-top:1%;
+    padding-right:1%;
+    float:left;
+    display:inline-block;
+    border:3px solid black;
+    width:45%;
+}
+
+#connectionerror {
+    display:none;
+    margin-top:2%;
+    font-size: 0.9vw;
+    color:red;
+    font-style:italic;
+}
+
+#cantplay {
+    display:none;
+    margin-top:2%;
+    font-size: 0.9vw;
+    color:red;
+    font-style:italic;
+}
+
+#stillconnected {
+    display:none;
+    margin-top:2%;
+    font-size: 0.9vw;
+    color:red;
+    font-style:italic;
+}
+
+#serveurfull {
+    display:none;
+    margin-top:2%;
+    font-size: 0.9vw;
+    color:red;
+    font-style:italic;
+}
+
+#registrationerror {
+    display:none;
+    margin-top:2%;
+    font-size: 0.9vw;
+    color:red;
+    font-style:italic;
+}
+
+#newuser {
+    display:block;
+    padding-bottom:1.8%;
+    padding-left:1%;
+    padding-top:1%;
+    padding-right:1%;
+    border:3px solid black;
+    width:45%;
+    float:right;
+}
+
+.titleregistered {
+    font-size: 2vw;
+    text-decoration:underline;
+}
+
+.labelsize {
+    font-size: 1.3vw;
+}
+
+.inputsize {
+    width:45%;
+}
+
+#passwordConnection {
+    width:45%;
+    margin-left:11%;
+}
+
+#passwordRegistration {
+    width:45%;
+    margin-left:11%;
+}
+
+#emailRegistration {
+    width:45%;
+    margin-left:30.3%;
+}
+
+.valid {
+    margin-top:5%;
+}
+
+#title {
+    -webkit-animation: spin 0.6s linear infinite;
+    -moz-animation: spin 0.6s linear infinite;
+    -ms-animation: spin 0.6s linear infinite;
+    -o-animation: spin 0.6s linear infinite;
+    position: absolute;
+    z-index: 1;
+    top: 22%;
+    left: 35%;
+}
+
+#timer {
+    position:absolute;
+    display:none;
+    color:red;
+    font-size: 5em;
+}
+
+#conteneurpitch {
+    position: absolute;
+    width: 60%;
+}
+
+#pitch {
+    width: 100%;
+}
+
+#instructions {
+    display: none;
+    text-align: center;
+    letter-spacing: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1%;
+    width: 40%;
+    position: absolute;
+    font-size: 1.3em;
+    top: 55%;
+    left: 29%;
+    color: white;
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+}
+
+#disconnected {
+    display: none;
+    text-align: center;
+    letter-spacing: 5px;
+    background-color: rgba(253, 0, 0, 0.5);
+    padding: 5%;
+    width: 60%;
+    position: absolute;
+    font-size: 5vw;
+    top: 47%;
+    left: 29%;
+    color: white;
+    font-family: "Bebas Neue", Verdana, Impact, sans-serif;
+}
+
+#conteneurscore {
+    position: absolute;
+    left: 60%;
+    width: 40%;
+}
+
+#scorelive {
+    width: 100%;
+}
+
+
+#highscores {
+    width: 100%;
+    margin-top: 0.4%;
+}
+
+#firstplayer {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left:1%;
+    width: 8%;
+}
+
+#secondplayer {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left:91%;
+    width: 8%;
+}

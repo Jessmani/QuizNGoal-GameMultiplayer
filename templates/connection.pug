@@ -1,0 +1,23 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='static/css/style.css')
+  script(src='static/js/jquery-3.3.1.min.js')
+  script(src='/socket.io/socket.io.js')
+  script(src='static/js/socket.js')
+  title Quiz&apos;N&apos;Goal
+#conteneur
+  #conteneurpitch
+    #instructions
+      p=message
+    img#pitch(src='static/img/pitch.png' alt='Terrain')
+    img#firstplayer(src='static/img/player1.png' alt='First player')
+    img#secondplayer(src='static/img/player2.png' alt='Second player')
+  #conteneurscore
+    img#scorelive(src='static/img/livescore.png' alt='Score en direct')
+    p#score=score
+    p#login=login
+script(src='static/js/game.js')
+script(src='static/js/player.js')

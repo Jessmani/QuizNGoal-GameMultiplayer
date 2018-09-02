@@ -1,0 +1,80 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='static/css/style.css')
+  script(src='static/js/quiz.js')
+  script(src='static/js/jquery-3.3.1.min.js')
+  script(src='/socket.io/socket.io.js')
+  script(src='static/js/socket.js')
+  title Quiz&apos;N&apos;Goal
+#conteneur
+  #conteneurpitch
+    #instructions
+    #disconnected
+      p#messageWelcome
+    img#title(src='static/img/quizngoal.png' alt='Titre du jeu')
+    #quizStatus
+    #quiz
+    input#checkAnswer(type='submit' value='VALIDER')
+    #connection
+      #stillregistered
+        p.titleregistered D&eacute;j&agrave; inscrit ?
+        form(method='POST' action='/connection' id="connectionForm")
+          label.labelsize Nom du champion : 
+          input.inputsize(type='text' name='login' id="loginConnection")
+          br
+          label.labelsize Mot de passe : 
+          input#passwordConnection(type='password' name='password')
+          br
+          input.valid(type='submit' value='Jouer')
+          br
+          p#connectionerror
+          p#serveurfull
+          p#cantplay
+          p#stillconnected
+      #newuser
+        p.titleregistered Inscription
+        form(method='POST' action='/registration' id="registrationForm")
+          label.labelsize Nom du champion : 
+          input.inputsize(type='text' name='login' id="loginRegistration" maxlength="9")
+          br
+          label.labelsize Mot de passe : 
+          input#passwordRegistration(type='password' name='password')
+          br
+          label.labelsize email : 
+          input#emailRegistration(type='email' name='mail')
+          br
+          input.valid(type='submit' value="M'inscrire")
+          p#registrationerror
+    img#pitch(src='static/img/pitch.png' alt='Terrain')
+    img#firstplayer(src='static/img/player1.png' alt='First player')
+    img#secondplayer(src='static/img/player2.png' alt='Second player')
+  #conteneurscore
+    img#playerOneAvatar(src='static/img/avatar_p1.png' alt='Avatar first player')
+    img#playerTwoAvatar(src='static/img/avatar_p2.png' alt='Avatar second player')
+    #playerOneTitle
+    #playerTwoTitle
+    #playerOneScore
+    #playerTwoScore
+    img#scorelive(src='static/img/livescore.png' alt='Score en direct')
+    img#highscores(src='static/img/highscores.jpg' alt="HighScores")
+    // #arrayofscores
+    #first
+    #scoreandplaytime1st 
+    #scoreandplaytime2nd 
+    #scoreandplaytime3rd
+    #second
+    #third
+    #fourth
+    #fifth
+    #sixth
+    #seventh
+    #eighth
+    #ninth
+    #tenth
+    #timer
+  
+script(src='static/js/opening.js')
+script(src='static/js/player.js')
